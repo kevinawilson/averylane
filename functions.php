@@ -1,42 +1,42 @@
 <?php
 // Theme support options
-require_once(get_template_directory().'/assets/functions/theme-support.php'); 
+require_once(get_template_directory().'/assets/functions/theme-support.php');
 
 // WP Head and other cleanup functions
-require_once(get_template_directory().'/assets/functions/cleanup.php'); 
+require_once(get_template_directory().'/assets/functions/cleanup.php');
 
 // Register scripts and stylesheets
-require_once(get_template_directory().'/assets/functions/enqueue-scripts.php'); 
+require_once(get_template_directory().'/assets/functions/enqueue-scripts.php');
 
 // Register custom menus and menu walkers
-require_once(get_template_directory().'/assets/functions/menu.php'); 
+require_once(get_template_directory().'/assets/functions/menu.php');
 
 // Register sidebars/widget areas
-require_once(get_template_directory().'/assets/functions/sidebar.php'); 
+require_once(get_template_directory().'/assets/functions/sidebar.php');
 
 // Makes WordPress comments suck less
-require_once(get_template_directory().'/assets/functions/comments.php'); 
+require_once(get_template_directory().'/assets/functions/comments.php');
 
 // Replace 'older/newer' post links with numbered navigation
-require_once(get_template_directory().'/assets/functions/page-navi.php'); 
+require_once(get_template_directory().'/assets/functions/page-navi.php');
 
 // Adds support for multiple languages
-require_once(get_template_directory().'/assets/translation/translation.php'); 
+require_once(get_template_directory().'/assets/translation/translation.php');
 
 // Remove 4.2 Emoji Support
-// require_once(get_template_directory().'/assets/functions/disable-emoji.php'); 
+// require_once(get_template_directory().'/assets/functions/disable-emoji.php');
 
 // Adds site styles to the WordPress editor
-//require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
+//require_once(get_template_directory().'/assets/functions/editor-styles.php');
 
 // Related post function - no need to rely on plugins
-// require_once(get_template_directory().'/assets/functions/related-posts.php'); 
+// require_once(get_template_directory().'/assets/functions/related-posts.php');
 
 // Use this as a template for custom post types
 // require_once(get_template_directory().'/assets/functions/custom-post-type.php');
 
 // Customize the WordPress login menu
-// require_once(get_template_directory().'/assets/functions/login.php'); 
+// require_once(get_template_directory().'/assets/functions/login.php');
 
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php');
@@ -47,7 +47,7 @@ require_once(get_template_directory() . '/assets/functions/custom-post-type.php'
 $keymetric_script = 'http://www.averylanewomensrehab.com/wp-content/themes/AveryLane/assets/js/keymetric.js';
 $deps = array();
 
-wp_enqueue_script( 'keymetric', $keymetric_script, $deps, false, true );
+//wp_enqueue_script( 'keymetric', $keymetric_script, $deps, false, true );
 
 /********************* META-BOX ***********************/
 
@@ -270,7 +270,7 @@ function al_admin_init(){
     register_setting('al_settings','al_tagline_first');
     register_setting('al_settings','al_tagline_second');
     register_setting('al_settings','al_insurance');
-    
+
     // Subage banner settings
     add_settings_section('al_settings_subpages',
                          'Subpages',
@@ -305,7 +305,7 @@ function al_admin_init(){
                        'al_setting_id_string',
                        'al_settings',
                        'al_settings_subpages',
-                       array( 'al_subpages_primary_id' ) );    
+                       array( 'al_subpages_primary_id' ) );
     add_settings_field('al_subpages_primary_alt',
                        'Primary Care Alt',
                        'al_setting_alt_string',
@@ -360,21 +360,21 @@ function al_admin_init(){
                        'al_settings',
                        'al_settings_subpages',
                        array( 'al_subpages_fallback_alt' ) );
-    
+
     register_setting('al_settings','al_subpages_about_banner');
     register_setting('al_settings','al_subpages_about_id');
-    register_setting('al_settings','al_subpages_about_alt');    
+    register_setting('al_settings','al_subpages_about_alt');
     register_setting('al_settings','al_subpages_primary_banner');
     register_setting('al_settings','al_subpages_primary_id');
     register_setting('al_settings','al_subpages_primary_alt');
     register_setting('al_settings','al_subpages_therapies_banner');
     register_setting('al_settings','al_subpages_therapies_id');
-    register_setting('al_settings','al_subpages_therapies_alt');    
+    register_setting('al_settings','al_subpages_therapies_alt');
     register_setting('al_settings','al_subpages_admissions_banner');
     register_setting('al_settings','al_subpages_admissions_id');
     register_setting('al_settings','al_subpages_admissions_alt');
     register_setting('al_settings','al_subpages_fallback_banner');
-    register_setting('al_settings','al_subpages_fallback_alt');    
+    register_setting('al_settings','al_subpages_fallback_alt');
 
     // Address settings
     add_settings_section('al_settings_address',
