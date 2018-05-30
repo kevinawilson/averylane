@@ -149,8 +149,12 @@ header.header, footer.footer {
   background-color: #F9F2E8;
 }
 
-header {
+.home-test header {
   background-image: url("../images/WATERCOLOR-A.png");
+}
+
+.header {
+  background-image: none;
 }
 
 div.logo {
@@ -229,43 +233,68 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
   color: #C86775;
 }
 
-nav#main-nav {
+.home-test nav#main-nav {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 50px;
   position:relative;
 }
 
-nav#main-nav #menu-main-3{
+.home-test nav#main-nav #menu-main-3{
   display: block;
   position: absolute;
   right: 0;
   bottom: 56px;
 }
 
-nav#main-nav li {
-  width: 60px;
+.home-test nav#main-nav li {
+  width: 30px;
   border-right: 1px solid #C86775;
   font-size: 12px;
   text-transform: uppercase;
   position:relative;
+  padding: 0;
+}
+
+.home-test nav#main-nav li li {
+  padding: 10px 0;
+}
+
+nav#main-nav {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+nav#main-nav > ul {
+    display: inline-block;
+}
+
+nav#main-nav li {
+    padding: 10px;
 }
 
 nav#main-nav li:last-child {
   border:0;
-
 }
 
-nav#main-nav li.menu-item a:link, nav#main-nav li.menu-item a:visited, nav#main-nav li.menu-item a:active {
+.home-test nav#main-nav li.menu-item a:link, .home-test nav#main-nav li.menu-item a:visited, .home-test nav#main-nav li.menu-item a:active {
   color: #606060;
   padding: 0 20px;
+}
+
+nav#main-nav li.menu-item a:link,
+nav#main-nav li.menu-item a:visited,
+nav#main-nav li.menu-item a:active {
+    color: #606060;
+    padding: 0 1.5rem;
 }
 
 nav#main-nav li.menu-item:hover>a {
   color: #C86775;
 }
 
-nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
+.home-test nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
   position:absolute;
   left: 0;
   font-size: 12px;
@@ -275,12 +304,17 @@ nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
   width: 275px;
   padding: 15px;
   background-color: #FCEFE6;
-
 }
+
+nav#main-nav ul.dropdown.menu > li > ul.is-dropdown-submenu {
+    left: 34px;
+    font-size: .8rem;
+}
+
+
 
 nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu li {
   width: 100%;
-  padding: 10px 0;
   border: 0;
 }
 
@@ -294,32 +328,42 @@ nav#main-nav ul.submenu li.menu-item a {
   line-height: 1.2;
 }
 
-nav#main-nav ul.submenu li:hover>a {
+.home-test nav#main-nav ul.submenu li:hover {
+    background-color: transparent;
+}
+
+.home-test nav#main-nav ul.submenu li:hover>a {
   color: #C86775;
 }
 
-nav#main-nav .header-phone {
+nav#main-nav ul.submenu li:hover {
+    background-color: #C86775;
+}
+
+nav#main-nav ul.submenu li:hover a {
+    color: #fff;
+}
+
+
+.home-test nav#main-nav .header-phone {
   float:right;
   width: 100%;
   color: #C86775;
 }
 
-nav#main-nav .phone {
+.home-test nav#main-nav .phone {
   float:right;
   font-weight: 700;
   font-size: 36px;
 }
 
-nav#main-nav .help {
+.home-test nav#main-nav .help {
   float:right;
   font-weight: 300;
   font-size: 36px;
   font-style: italic;
   padding-right: 10px;
 }
-
-
-
 
 nav.sidebar-nav ul {
   margin-left: 0;
@@ -343,8 +387,6 @@ nav.sidebar-nav li:hover>a:link, nav.sidebar-nav li:hover>a:visited, nav.sidebar
   background-color: #C86775;
   color: #FFF;
 }
-
-
 
 footer ul.menu li {
   display: list-item;

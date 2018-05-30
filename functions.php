@@ -47,7 +47,7 @@ require_once(get_template_directory() . '/assets/functions/custom-post-type.php'
 $keymetric_script = 'http://www.averylanewomensrehab.com/wp-content/themes/AveryLane/assets/js/keymetric.js';
 $deps = array();
 
-//wp_enqueue_script( 'keymetric', $keymetric_script, $deps, false, true );
+wp_enqueue_script( 'keymetric', $keymetric_script, $deps, false, true );
 
 /********************* META-BOX ***********************/
 
