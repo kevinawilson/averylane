@@ -166,31 +166,31 @@ div.logo {
 NAVIGATION STYLES
 *********************/
 
-#menu-main-menu {
+.off-canvas-wrapper, .off-canvas {
   background-color: #F9F2E8;
 }
 
-#menu-main-menu li.menu-item a:link, #menu-main-menu li.menu-item a:visited, #menu-main-menu li.menu-item a:active {
+.off-canvas-menu li.menu-item a, #menu-main-menu li.menu-item a:visited, #menu-main-menu li.menu-item a:active {
   color: #606060;
 }
 
-#menu-main-menu li.menu-item>a:hover, #menu-main-menu li.menu-item:hover>a {
+.off-canvas-menu li.menu-item>a:hover, #menu-main-menu li.menu-item:hover>a {
   color: #FFF;
 }
 
-#menu-main-menu li.menu-item:hover {
+.off-canvas-menu li.menu-item:hover {
   background-color: #C86775;
 }
 
-#menu-main-menu li.menu-item ul.menu {
+.off-canvas-menu li.menu-item ul.menu {
   margin-left: 10px;
 }
 
-#menu-main-menu li.menu-item:hover ul.menu, #menu-main-menu li.menu-item:hover ul.menu li, #menu-main-menu li.menu-item:hover ul.menu li {
+.off-canvas-menu li.menu-item:hover ul.menu, #menu-main-menu li.menu-item:hover ul.menu li, #menu-main-menu li.menu-item:hover ul.menu li {
   background-color: #F9F2E8;
 }
 
-#menu-main-menu li.menu-item ul.menu li:hover {
+.off-canvas-menu li.menu-item ul.menu li:hover {
   background-color: #C86775;
 }
 
@@ -237,10 +237,10 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
   text-align: center;
   padding-bottom: 30px;
   padding-top: 50px;
-  position:relative;
+  position: relative;
 }
 
-.home-test nav#main-nav #menu-main-3{
+.home-test nav#main-nav #menu-main-3 {
   display: block;
   position: absolute;
   right: 0;
@@ -252,7 +252,7 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
   border-right: 1px solid #C86775;
   font-size: 12px;
   text-transform: uppercase;
-  position:relative;
+  position: relative;
   padding: 0;
 }
 
@@ -261,21 +261,21 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
 }
 
 nav#main-nav {
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-nav#main-nav > ul {
-    display: inline-block;
+nav#main-nav>ul {
+  display: inline-block;
 }
 
 nav#main-nav li {
-    padding: 10px;
+  padding: 10px;
 }
 
 nav#main-nav li:last-child {
-  border:0;
+  border: 0;
 }
 
 .home-test nav#main-nav li.menu-item a:link, .home-test nav#main-nav li.menu-item a:visited, .home-test nav#main-nav li.menu-item a:active {
@@ -283,11 +283,9 @@ nav#main-nav li:last-child {
   padding: 0 20px;
 }
 
-nav#main-nav li.menu-item a:link,
-nav#main-nav li.menu-item a:visited,
-nav#main-nav li.menu-item a:active {
-    color: #606060;
-    padding: 0 1.5rem;
+nav#main-nav li.menu-item a:link, nav#main-nav li.menu-item a:visited, nav#main-nav li.menu-item a:active {
+  color: #606060;
+  padding: 0 1.5rem;
 }
 
 nav#main-nav li.menu-item:hover>a {
@@ -295,7 +293,7 @@ nav#main-nav li.menu-item:hover>a {
 }
 
 .home-test nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
-  position:absolute;
+  position: absolute;
   left: 0;
   font-size: 12px;
   z-index: 50;
@@ -306,12 +304,10 @@ nav#main-nav li.menu-item:hover>a {
   background-color: #FCEFE6;
 }
 
-nav#main-nav ul.dropdown.menu > li > ul.is-dropdown-submenu {
-    left: 34px;
-    font-size: .8rem;
+nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
+  left: 34px;
+  font-size: .8rem;
 }
-
-
 
 nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu li {
   width: 100%;
@@ -329,7 +325,7 @@ nav#main-nav ul.submenu li.menu-item a {
 }
 
 .home-test nav#main-nav ul.submenu li:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .home-test nav#main-nav ul.submenu li:hover>a {
@@ -337,28 +333,27 @@ nav#main-nav ul.submenu li.menu-item a {
 }
 
 nav#main-nav ul.submenu li:hover {
-    background-color: #C86775;
+  background-color: #C86775;
 }
 
 nav#main-nav ul.submenu li:hover a {
-    color: #fff;
+  color: #fff;
 }
 
-
 .home-test nav#main-nav .header-phone {
-  float:right;
+  float: right;
   width: 100%;
   color: #C86775;
 }
 
 .home-test nav#main-nav .phone {
-  float:right;
+  float: right;
   font-weight: 700;
   font-size: 36px;
 }
 
 .home-test nav#main-nav .help {
-  float:right;
+  float: right;
   font-weight: 300;
   font-size: 36px;
   font-style: italic;
@@ -427,31 +422,31 @@ HOME STYLES
   padding: 0;
 }
 
-.home .button{
+.home .button {
   margin: 35px 0;
 }
 
 .home_header {
   height: 672px;
   width: 100%;
-  position:relative;
+  position: relative;
 }
 
-.home_header_overlay{
+.home_header_overlay {
   width: 100%;
   height: 672px;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   z-index: -100;
-  background-color: rgba(121,93,72,1);
+  background-color: rgba(121, 93, 72, 1);
 }
 
-.ms-overlay-layers{
-    /*background-color: rgba(121,93,72,.2);*/
+.ms-overlay-layers {
+  /*background-color: rgba(121,93,72,.2);*/
 }
 
-.ms-view{
+.ms-view {
   opacity: .9;
 }
 
@@ -484,7 +479,7 @@ HOME STYLES
   padding: 20px 0;
 }
 
-.home_intro p{
+.home_intro p {
   text-align: left;
 }
 
@@ -507,15 +502,15 @@ HOME STYLES
   padding: 20px;
 }
 
-.home_insurance p{
-  text-align:left;
+.home_insurance p {
+  text-align: left;
 }
 
-.home_insurance_logos{
+.home_insurance_logos {
   opacity: .7;
 }
 
-.insurance_logo{
+.insurance_logo {
   padding: 20px;
 }
 
@@ -559,25 +554,24 @@ HOME STYLES
   padding: 20px;
 }
 
-.ms-staff-carousel .ms-nav-prev, .ms-staff-carousel .ms-nav-next{
+.ms-staff-carousel .ms-nav-prev, .ms-staff-carousel .ms-nav-next {
   margin-top: -30px;
 }
 
-.ms-staff-carousel.ms-round .ms-nav-prev{
+.ms-staff-carousel.ms-round .ms-nav-prev {
   left: -36px;
 }
 
-.ms-staff-carousel.ms-round .ms-nav-next{
+.ms-staff-carousel.ms-round .ms-nav-next {
   right: -20px;
 }
 
-
-.ms-slide{
+.ms-slide {
   opacity: 0.5;
   transition: opacity 0.3s ease-out;
 }
 
-.ms-sl-selected{
+.ms-sl-selected {
   opacity: 1;
   transition: opacity 0.3s ease-out;
 }
@@ -1261,6 +1255,36 @@ Media-Queries
   }
   div.footer-map {
     padding-left: 0;
+  }
+  .home_insurance {
+    padding: 0;
+  }
+
+  .home_intro {
+    padding: 20px 0;
+  }
+  .home_contact_form nf-field {
+    width: 100%;
+  }
+  .home_header {
+    height: auto;
+  }
+
+  .home_header_logo_bar {
+    height: auto;
+    background-color: rgb(200, 103, 117, .7);
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .home_header_logo_bar .gallery-image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .home_header_logo_bar_accredited {
+    width: 100%;
+    text-align: center;
   }
 }
 

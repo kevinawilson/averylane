@@ -103,8 +103,7 @@ Template Name: Home
           $home_head = get_field("home_slider");
           masterslider ( $home_head );
         ?>
-        <div class="home_header_overlay">
-        </div>
+
         <div class="row home_header_logo_bar">
           <div class="column small-10 small-centered">
             <div class="row">
@@ -115,7 +114,7 @@ Template Name: Home
                   <?php $images = get_field('home_certified_bar');
                         if( $images ):
                         foreach( $images as $image ): ?>
-                  <div class="large-3 column small-3 gallery-image">
+                  <div class="small-3 column gallery-image">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   </div>
                   <?php endforeach; ?>
