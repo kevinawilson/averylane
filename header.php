@@ -33,7 +33,7 @@
         <![endif]-->
         <?php } ?>
             <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-            <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700|Raleway:700" rel="stylesheet">
             <script type="application/ld+json"> { "@context": "http://schema.org/", "@type": "MedicalBusiness", "name": "Avery Lane", "url": "http://www.averylanewomensrehab.com", "telephone": "800-270-2406", "description": "Avery Lane is an innovative San Francisco Bay Area substance abuse and dual-diagnosis treatment program designed specifically for women by women. Our primary goal is to create an environment where the staff and clients work together and grow together, forming a treatment community. We strive to end the cycle of addiction by accepting female clients who have been through multiple treatment programs and/or experienced multiple relapses, getting to the root of the substance abuse, and helping create a new life surrounded by recovery and healing.", "logo": "http://www.averylanewomensrehab.com/wp-content/themes/Avery-Lane/assets/images/logo.png", "openingHours": "Mo-Su", "founder": { "@type": "Person", "name": "Camille Hildebrand", "email": "camille@averylaneforwomen.com", "jobTitle": "Founder & Chief Executive Officer" }, "location": { "@type": "PostalAddress", "addressCountry": "US", "addressRegion": "CA", "addressLocality": "Novato", "postalCode": "94945", "streetAddress": "505A San Marin Drive" }, "makesOffer": { "@type": "Offer", "itemOffered": { "@type": "Service", "serviceType": [ "Residential Program", "Addiction Treatment" ], "additionalType": "http://www.productontology.org/id/Drug_rehabilitation", "audience": { "@type": "MedicalAudience", "requiredGender": "female" } } }, "isicV4": "8610", "naics": "621420" } </script>
             <?php wp_head(); ?>
                 <!-- Drop Google Analytics here -->
@@ -64,17 +64,27 @@
                         <!-- This navs will be applied to the topbar, above all content
 							  To see additional nav styles, visit the /parts directory -->
                         <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-                            <div class="row hide-for-small-only header-menu">
-                                <!--<?php wp_nav_menu( ['menu' => 'Top' ] ); ?>-->
-                                    <div class="column large-3 large-offset-8 end">
-                                        <p id="top-phone"><em>Get&nbsp;help&nbsp;now</em> &nbsp;<a href="phone:8002702406"><strong>800.270.2406</strong></a></p>
-                                    </div>
-                            </div>
-                            <div class="row">
-                                <div class="column small-centered small-6 medium-4 large-3 logo"> <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" /></a> </div>
-                            </div>
-                            <nav id="main-nav" class="row hide-for-small show-for-large large-centered ">
+
+                            <nav id="main-nav" class="large-10 hide-for-small show-for-large large-centered">
+                              <div class="row">
+                              <div class="column large-4">
+                                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" /></a>
+                              </div>
+                              <div class="column large-8">
+                                <div class="row hide-for-small-only header-menu">
+                                    <!--<?php wp_nav_menu( ['menu' => 'Top' ] ); ?>-->
+                                        <div class="header-phone">
+                                          <div class="phone">
+                                            800-262-4271
+                                          </div>
+                                          <div class="help">
+                                            We can help today
+                                          </div>
+                                        </div>
+                                </div>
                                 <?php joints_top_nav(); ?>
+                              </div>
+                            </div>
                             </nav>
                     </header>
                     <!-- end .header -->

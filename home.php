@@ -5,12 +5,13 @@ Template Name: Home
 ?>
   <?php get_header(); ?>
   <main id="main" class="medium-12 columns home" role="main">
-    <div classd="row column home_header">
-
-      <?php
-        $home_head = get_field("home_slider");
-        masterslider ( $home_head );
+    <div class="row home_header">
+        <?php
+          $home_head = get_field("home_slider");
+          masterslider ( $home_head );
         ?>
+        <div class="home_header_overlay">
+        </div>
         <div class="row home_header_logo_bar">
           <div class="column small-10 small-centered">
             <div class="row">
@@ -18,10 +19,9 @@ Template Name: Home
                 accredited and certified
               </div>
               <div class="column large-8 ">
-                <?php
-                        $images = get_field('home_certified_bar');
-                        if( $images ): ?>
-                  <?php foreach( $images as $image ): ?>
+                  <?php $images = get_field('home_certified_bar');
+                        if( $images ):
+                        foreach( $images as $image ): ?>
                   <div class="large-3 column small-3 gallery-image">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   </div>
@@ -32,7 +32,7 @@ Template Name: Home
           </div>
         </div>
     </div>
-    <div class="row column home_intro">
+    <div class="row home_intro">
       <div class="column small-10 large-8 small-centered">
         <h1 class=""><?php echo get_field( 'home_intro_title' ); ?></h1>
         <p class="">
@@ -54,13 +54,13 @@ Template Name: Home
         </div>
       </div>
       <div class="row">
-        <div class="column small-10 small-centered">
-          <div class="row">
+        <div class="column small-10 small-centered home_insurance_logos">
+          <div class="row large-up-5">
             <?php
                 $images = get_field('home_insurance_logos');
                 if( $images ): ?>
               <?php foreach( $images as $image ): ?>
-              <div class="large-2 small-2 column">
+              <div class="column insurance_logo">
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
               </div>
               <?php endforeach; ?>

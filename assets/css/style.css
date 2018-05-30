@@ -75,7 +75,7 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 h1, h2, h3 {
   color: #C86775;
   font-family: 'Raleway', sans-serif;
-  line-height: 32px;
+  line-height: 2.6rem;
 }
 
 h1.position-off {
@@ -147,6 +147,10 @@ HEADER STYLES
 
 header.header, footer.footer {
   background-color: #F9F2E8;
+}
+
+header {
+  background-image: url("../images/WATERCOLOR-A.png");
 }
 
 div.logo {
@@ -227,21 +231,34 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
 
 nav#main-nav {
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  position:relative;
 }
 
-nav#main-nav>ul {
-  display: inline-block;
+nav#main-nav #menu-main-3{
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 56px;
 }
 
 nav#main-nav li {
-  padding: 10px;
+  width: 60px;
+  border-right: 1px solid #C86775;
+  font-size: 12px;
+  text-transform: uppercase;
+  position:relative;
+}
+
+nav#main-nav li:last-child {
+  border:0;
+
 }
 
 nav#main-nav li.menu-item a:link, nav#main-nav li.menu-item a:visited, nav#main-nav li.menu-item a:active {
   color: #606060;
-  padding: 0 1.5rem;
+  padding: 0 20px;
 }
 
 nav#main-nav li.menu-item:hover>a {
@@ -249,8 +266,22 @@ nav#main-nav li.menu-item:hover>a {
 }
 
 nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
-  left: 34px;
-  font-size: .8rem;
+  position:absolute;
+  left: 0;
+  font-size: 12px;
+  z-index: 50;
+  top: 52px;
+  border: 0;
+  width: 275px;
+  padding: 15px;
+  background-color: #FCEFE6;
+
+}
+
+nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu li {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
 }
 
 nav#main-nav ul.submenu {
@@ -263,13 +294,32 @@ nav#main-nav ul.submenu li.menu-item a {
   line-height: 1.2;
 }
 
-nav#main-nav ul.submenu li:hover {
-  background-color: #C86775;
+nav#main-nav ul.submenu li:hover>a {
+  color: #C86775;
 }
 
-nav#main-nav ul.submenu li:hover>a {
-  color: #FFF;
+nav#main-nav .header-phone {
+  float:right;
+  width: 100%;
+  color: #C86775;
 }
+
+nav#main-nav .phone {
+  float:right;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+nav#main-nav .help {
+  float:right;
+  font-weight: 300;
+  font-size: 36px;
+  font-style: italic;
+  padding-right: 10px;
+}
+
+
+
 
 nav.sidebar-nav ul {
   margin-left: 0;
@@ -293,6 +343,8 @@ nav.sidebar-nav li:hover>a:link, nav.sidebar-nav li:hover>a:visited, nav.sidebar
   background-color: #C86775;
   color: #FFF;
 }
+
+
 
 footer ul.menu li {
   display: list-item;
@@ -333,9 +385,32 @@ HOME STYLES
   padding: 0;
 }
 
+.home .button{
+  margin: 35px 0;
+}
+
 .home_header {
   height: 672px;
   width: 100%;
+  position:relative;
+}
+
+.home_header_overlay{
+  width: 100%;
+  height: 672px;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -100;
+  background-color: rgba(121,93,72,1);
+}
+
+.ms-overlay-layers{
+    /*background-color: rgba(121,93,72,.2);*/
+}
+
+.ms-view{
+  opacity: .9;
 }
 
 .home_header_logo_bar {
@@ -357,14 +432,18 @@ HOME STYLES
 
 .home_intro {
   padding: 60px 0;
-  background-image: url("../images/WATERCOLOR A-top.png");
+  background-image: url("../images/AL-Watercolor-LG-B.jpg");
   background-size: cover;
   text-align: center;
 }
 
 .home_intro h1 {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.home_intro p{
+  text-align: left;
 }
 
 .home_insurance {
@@ -383,6 +462,18 @@ HOME STYLES
 
 .home_insurance h1 {
   text-align: center;
+  padding: 20px;
+}
+
+.home_insurance p{
+  text-align:left;
+}
+
+.home_insurance_logos{
+  opacity: .7;
+}
+
+.insurance_logo{
   padding: 20px;
 }
 
@@ -424,6 +515,29 @@ HOME STYLES
   font-weight: 700;
   color: #868686;
   padding: 20px;
+}
+
+.ms-staff-carousel .ms-nav-prev, .ms-staff-carousel .ms-nav-next{
+  margin-top: -30px;
+}
+
+.ms-staff-carousel.ms-round .ms-nav-prev{
+  left: -36px;
+}
+
+.ms-staff-carousel.ms-round .ms-nav-next{
+  right: -20px;
+}
+
+
+.ms-slide{
+  opacity: 0.5;
+  transition: opacity 0.3s ease-out;
+}
+
+.ms-sl-selected{
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
 }
 
 .home_contact_form {
