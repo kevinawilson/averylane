@@ -55,6 +55,7 @@ body main a.button {
   padding: 10px 30px;
   font-size: 1rem;
   transition: all 0.5s ease-out;
+  letter-spacing: 2px;
 }
 
 body main a.button:hover {
@@ -240,7 +241,7 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
   position: relative;
 }
 
-.home-test nav#main-nav #menu-main-3 {
+.home-test nav#main-nav .page-menu {
   display: block;
   position: absolute;
   right: 0;
@@ -432,6 +433,14 @@ HOME STYLES
   position: relative;
 }
 
+.home_header .ms-bullets.ms-dir-h {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  margin-top: 30px;
+  width: 100px;
+}
+
 .home_header_overlay {
   width: 100%;
   height: 672px;
@@ -462,8 +471,8 @@ HOME STYLES
 
 .home_header_logo_bar_accredited {
   font-family: 'nella_sueregular';
-  font-size: 35px;
-  color: white;
+  font-size: 27px;
+  color: #fff;
   margin-top: 25px;
 }
 
@@ -483,9 +492,72 @@ HOME STYLES
   text-align: left;
 }
 
+.home_programs {
+  background-color: #F6F6EF;
+  padding: 50px 0;
+}
+
+.home_programs_block {
+  padding-top: 30px;
+}
+
+.home_programs .home_programs_block_title {
+  text-align: center;
+}
+
+.home_programs_img {
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home_programs_text_block {
+  padding: 20px 15px;
+  transition: all .4s;
+  line-height: 22px;
+}
+
+.home_programs_title {
+  font-size: 18px;
+  color: #606060;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+.home_programs_paragraph {
+  color: #868686;
+  font-size: 16px;
+  height: 270px;
+}
+
+.home_programs_link {
+  transition: all .4s;
+  display: inline-block;
+}
+
+.home_programs_link-text {
+  color: #606060;
+  font-size: 14px;
+  transition: all .4s;
+  font-weight: 700;
+}
+
+.home_programs_block .home_programs_link:hover {
+  transition: all .4s;
+  color: #C86775;
+  -webkit-box-shadow: 7px 7px 17px -6px rgba(161, 161, 161, .6);
+  -moz-box-shadow: 7px 7px 17px -6px rgba(161, 161, 161, .6);
+  box-shadow: 7px 7px 17px -6px rgba(161, 161, 161, .6);
+}
+
+.home_programs_block .home_programs_link:hover .home_programs_text_block {
+  background-color: #FFFFFF;
+  transition: all .4s;
+}
+
 .home_insurance {
   padding: 60px 0;
-  background-image: url("../images/background-insurance.jpg");
+  background-image: url("../images/insurance.jpg");
   background-size: cover;
   text-align: center;
 }
@@ -495,6 +567,7 @@ HOME STYLES
   color: #868686;
   font-size: 2em;
   padding-top: 40px;
+  text-transform: lowercase;
 }
 
 .home_insurance h1 {
@@ -552,6 +625,7 @@ HOME STYLES
   font-weight: 700;
   color: #868686;
   padding: 20px;
+  letter-spacing: 2px;
 }
 
 .ms-staff-carousel .ms-nav-prev, .ms-staff-carousel .ms-nav-next {
@@ -566,20 +640,11 @@ HOME STYLES
   right: -20px;
 }
 
-.ms-slide {
-  opacity: 0.5;
-  transition: opacity 0.3s ease-out;
-}
-
-.ms-sl-selected {
-  opacity: 1;
-  transition: opacity 0.3s ease-out;
-}
-
 .home_contact_form {
   background-image: url("../images/AL-Watercolor-LG-D.jpg");
   background-size: cover;
   padding: 50px 0;
+  color: #606060;
 }
 
 .home_contact_form h3 {
@@ -593,11 +658,15 @@ HOME STYLES
   width: 50%;
 }
 
+.home_contact_form input:focus {
+  border: 0;
+}
+
 .home_contact_form nf-field input {
   background-color: white;
   color: black;
   border: none;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 10px;
   -webkit-box-shadow: 2px 4px 41px -2px rgba(161, 161, 161, 1);
   -moz-box-shadow: 2px 4px 41px -2px rgba(161, 161, 161, 1);
   box-shadow: 2px 4px 41px -2px rgba(161, 161, 161, 1);
@@ -628,7 +697,15 @@ HOME STYLES
 }
 
 .home_contact_form .nf-error-msg, span.ninja-forms-req-symbol {
-  color: red;
+  color: #C86775;
+}
+
+.home_contact_form .nf-error .ninja-forms-field {
+  border: 1px solid #C86775;
+}
+
+.home_contact_form .nf-after-form-content {
+  display: none;
 }
 
 .home_contact_form textarea {
@@ -640,13 +717,22 @@ HOME STYLES
 }
 
 .home_contact_form .submit-wrap input {
-  padding: 15px 40px;
-  transition: all 0.45s;
-  font-weight: 700;
+  color: white;
+  background-color: rgb(200, 103, 117, 0.8);
+  padding: 10px 30px;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-out;
+  letter-spacing: 2px;
 }
 
 .home_contact_form .submit-wrap input:hover {
-  background-color: white;
+  background-color: #C86775;
+  font-weight: 700;
+  transition: all 0.5s ease-out;
+}
+
+.ninja-forms-req-symbol {
+  color: #C86775;
 }
 
 
@@ -1059,6 +1145,42 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
+.footer-test {
+  background-color: #F6F6EF;
+  padding: 50px;
+  text-transform: uppercase;
+}
+
+.footer-test .footer-right {
+  text-align: center;
+  padding-left: 40px;
+}
+
+.footer-test .footer-right img {
+  max-width: 209px;
+}
+
+.footer-test .footer-left a {
+  line-height: 1.6em;
+}
+
+.footer-test .footer-left li li {
+  display: none;
+}
+
+.footer-test .footer-center {
+  text-align: center;
+}
+
+.footer-test .footer-address {
+  padding: 1.7em 0;
+}
+
+.footer-test #social-icons {
+  padding: 0;
+  margin: 0;
+}
+
 .footer {
   clear: both;
   margin-top: 0em;
@@ -1256,10 +1378,18 @@ Media-Queries
   div.footer-map {
     padding-left: 0;
   }
+  .footer-test {
+    text-align: center;
+  }
+  .footer-test .footer-center {
+    padding: 2em;
+  }
+  .footer-test .footer-right {
+    padding: 0;
+  }
   .home_insurance {
     padding: 0;
   }
-
   .home_intro {
     padding: 20px 0;
   }
@@ -1269,7 +1399,6 @@ Media-Queries
   .home_header {
     height: auto;
   }
-
   .home_header_logo_bar {
     height: auto;
     background-color: rgb(200, 103, 117, .7);
@@ -1277,7 +1406,6 @@ Media-Queries
     margin: 0;
     position: relative;
   }
-
   .home_header_logo_bar .gallery-image {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1285,6 +1413,19 @@ Media-Queries
   .home_header_logo_bar_accredited {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .home_programs_title {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .home_programs_paragraph {
+    color: #868686;
+    font-size: 16px;
+    height: auto;
+    padding-bottom: 30px;
   }
 }
 
