@@ -169,7 +169,7 @@ Template Name: home-template
                   seeking wellness
                 </div>
                 <div class="wellness_description">
-                  A healing center for women where we can grow together and support one another.
+                  A healing center for women where we can grow together and support one another
                 </div>
               </div>
           </div>
