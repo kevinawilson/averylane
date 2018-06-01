@@ -5,6 +5,8 @@
 		</ul>
 	</div>
 	<div class="top-bar-right">
-		<?php joints_top_nav(); ?>
+		<div class="phone">
+			<?php echo get_option( 'al_phone' ); ?>
+		</div>
 	</div>
 </div>

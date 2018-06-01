@@ -136,18 +136,18 @@ Template Name: home-template
           <!-- end .header -->
           <main id="main" class="medium-12 columns home" role="main">
             <div class="row home_header">
-              <?php
-          $home_head = get_field("home_slider");
-          masterslider ( $home_head );
-        ?>
+                      <?php
+                  $home_head = get_field("home_slider");
+                  masterslider ( $home_head );
+                ?>
 
                 <div class="row home_header_logo_bar">
                   <div class="column small-10 small-centered">
                     <div class="row">
-                      <div class="home_header_logo_bar_accredited column large-4">
+                      <div class="home_header_logo_bar_accredited column large-4 small-4">
                         accredited and certified
                       </div>
-                      <div class="column large-8 ">
+                      <div class="column large-8 small-8">
                         <?php $images = get_field('home_certified_bar');
                         if( $images ):
                         foreach( $images as $image ): ?>
@@ -161,6 +161,18 @@ Template Name: home-template
                   </div>
                 </div>
             </div>
+            <div class="home_header_mobile">
+            <a href="<?php echo get_home_url(); ?>"><img class="home_mobile_logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" /></a>
+            <img class='home_header_mobile_img' src="<?php echo get_template_directory_uri(); ?>/assets/images/AL-HERO-A.jpg">
+              <div class="home_header_seeking_wellness">
+                <div class="wellness">
+                  seeking wellness
+                </div>
+                <div class="wellness_description">
+                  A healing center for women where we can grow together and support one another.
+                </div>
+              </div>
+          </div>
             <div class="row home_intro">
               <div class="column small-10 large-8 small-centered">
                 <h1 class=""><?php echo get_field( 'home_intro_title' ); ?></h1>
@@ -225,12 +237,12 @@ Template Name: home-template
               </div>
               <div class="row">
                 <div class="column small-10 small-centered home_insurance_logos">
-                  <div class="row large-up-5">
+                  <div class="row medium-up-5">
                     <?php
                 $images = get_field('home_insurance_logos');
                 if( $images ): ?>
                       <?php foreach( $images as $image ): ?>
-                      <div class="column insurance_logo">
+                      <div class="column medium-1 insurance_logo">
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                       </div>
                       <?php endforeach; ?>
@@ -245,6 +257,12 @@ Template Name: home-template
                 masterslider ( $home_testimonial_slider );
               ?>
             </div>
+            <div class="row home_mobile_testimonial">
+              <div class="quote">“Avery Lane is a truly unique treatment program led by passionate, experienced professionals completely versed in and dedicated to healing women broken by addiction and substance abuse.”</i>
+              </div>
+              <div class="quoter" style="color: #de929a;"><b>- Camille Hildebrand, <br>Chief Executive Officer &amp; Founder</b></span>
+            </div>
+          </div>
             <div class="row home_staff">
               <div class="row home_staff_person">
                 <h1> Meet the Avery Lane Team</h1>
@@ -265,7 +283,7 @@ Template Name: home-template
             <div class="column small-10 small-centered">
               <div id="inner-footer" class="row">
                 <div class="medium-4 columns footer-left">
-                  <?php wp_nav_menu( ['menu' => 'Involved'] ); ?>
+                  <?php wp_nav_menu( ['menu' => 'Footer'] ); ?>
                 </div>
                 <div class="medium-4 columns footer-center">
                   <ul id="social-icons">

@@ -8,4 +8,9 @@
 			<!-- <li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li> -->
 		</ul>
 	</div>
+	<div class="top-bar-right float-right show-for-small hide-for-large">
+		<div class="phone">
+			<?php echo get_option( 'al_phone' ); ?>
+		</div>
+	</div>
 </div>
