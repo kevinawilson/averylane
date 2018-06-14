@@ -1,4 +1,4 @@
-@charset "UTF-8";
+new-nav@charset "UTF-8";
 
 /************************************************
 
@@ -150,7 +150,7 @@ header.header, footer.footer {
   background-color: #F9F2E8;
 }
 
-.home-test header {
+.new-nav header {
   background-image: url("../images/top-wcolor.jpg");
   background-size: cover;
 }
@@ -246,21 +246,21 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
   color: #C86775;
 }
 
-.home-test nav#main-nav {
+.new-nav nav#main-nav {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 50px;
   position: relative;
 }
 
-.home-test nav#main-nav .page-menu {
+.new-nav nav#main-nav .page-menu {
   display: block;
   position: absolute;
   right: 0;
   bottom: 56px;
 }
 
-.home-test nav#main-nav li {
+.new-nav nav#main-nav li {
   width: 30px;
   border-right: 1px solid #C86775;
   font-size: 12px;
@@ -269,7 +269,7 @@ ul#menu-top li.menu-item a:link, ul#menu-top li.menu-item a:visited, ul#menu-top
   padding: 0;
 }
 
-.home-test nav#main-nav li li {
+.new-nav nav#main-nav li li {
   padding: 10px 0;
 }
 
@@ -291,7 +291,7 @@ nav#main-nav li:last-child {
   border: 0;
 }
 
-.home-test nav#main-nav li.menu-item a:link, .home-test nav#main-nav li.menu-item a:visited, .home-test nav#main-nav li.menu-item a:active {
+.new-nav nav#main-nav li.menu-item a:link, .new-nav nav#main-nav li.menu-item a:visited, .new-nav nav#main-nav li.menu-item a:active {
   color: #606060;
   padding: 0 15px;
 }
@@ -305,7 +305,7 @@ nav#main-nav li.menu-item:hover>a {
   color: #C86775;
 }
 
-.home-test nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
+.new-nav nav#main-nav ul.dropdown.menu>li>ul.is-dropdown-submenu {
   position: absolute;
   left: 0;
   font-size: 12px;
@@ -337,11 +337,11 @@ nav#main-nav ul.submenu li.menu-item a {
   line-height: 1.2;
 }
 
-.home-test nav#main-nav ul.submenu li:hover {
+.new-nav nav#main-nav ul.submenu li:hover {
   background-color: transparent;
 }
 
-.home-test nav#main-nav ul.submenu li:hover>a {
+.new-nav nav#main-nav ul.submenu li:hover>a {
   color: #C86775;
 }
 
@@ -353,19 +353,19 @@ nav#main-nav ul.submenu li:hover a {
   color: #fff;
 }
 
-.home-test nav#main-nav .header-phone {
+.new-nav nav#main-nav .header-phone {
   float: right;
   width: 100%;
   color: #C86775;
 }
 
-.home-test nav#main-nav .phone {
+.new-nav nav#main-nav .phone {
   float: right;
   font-weight: 700;
   font-size: 36px;
 }
 
-.home-test nav#main-nav .help {
+.new-nav nav#main-nav .help {
   float: right;
   font-weight: 300;
   font-size: 36px;
@@ -1167,38 +1167,46 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
-.footer-test {
+.new-footer {
   background-color: #F6F6EF;
   padding: 50px;
   text-transform: uppercase;
+  color: #868686;
 }
 
-.footer-test .footer-right {
+.new-footer div{
+  color: #868686;
+  font-family: "Lato"; 
+}
+
+
+
+.new-footer .footer-right {
   text-align: center;
   padding-left: 40px;
 }
 
-.footer-test .footer-right img {
+.new-footer .footer-right img {
   max-width: 209px;
 }
 
-.footer-test .footer-left a {
+.new-footer .footer-left a {
   line-height: 1.6em;
 }
 
-.footer-test .footer-left li li {
+.new-footer .footer-left li li {
   display: none;
 }
 
-.footer-test .footer-center {
+.new-footer .footer-center {
   text-align: center;
 }
 
-.footer-test .footer-address {
+.new-footer .footer-address {
   padding: 1.7em 0;
 }
 
-.footer-test #social-icons {
+.new-footer #social-icons {
   padding: 0;
   margin: 0;
 }
@@ -1405,13 +1413,13 @@ Media-Queries
   div.footer-map {
     padding-left: 0;
   }
-  .footer-test {
+  .new-footer {
     text-align: center;
   }
-  .footer-test .footer-center {
+  .new-footer .footer-center {
     padding: 2em;
   }
-  .footer-test .footer-right {
+  .new-footer .footer-right {
     padding: 0;
   }
   .home_insurance {
