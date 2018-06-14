@@ -155,6 +155,10 @@ header.header, footer.footer {
   background-size: cover;
 }
 
+main .article-header {
+  background-image: none;
+}
+
 .header {
   background-image: none;
 }
@@ -606,7 +610,6 @@ HOME STYLES
 }
 
 .home_testimonial {
-  background-image: url("../images/AL-TESTIMONIAL.jpg");
   background-size: cover;
 }
 
@@ -1176,7 +1179,7 @@ FOOTER STYLES
 
 .new-footer div{
   color: #868686;
-  font-family: "Lato"; 
+  font-family: "Lato";
 }
 
 

@@ -49,7 +49,7 @@ Template Name: home-template
                 <p class="">
                   <?php echo get_field("home_intro_paragraph"); ?>
                 </p>
-                <a class="button" href="'<?php echo get_field(" home_intro_link "); ?>'">learn more</a>
+                <a class="button" href='<?php echo get_field("home_intro_link");?>'>learn more</a>
               </div>
             </div>
             <div class="home_programs">
