@@ -8,6 +8,7 @@
   <!-- Mobile Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta class="foundation-mq">
+  <meta name="format-detection" content="telephone=no">
   <!-- If Site Icon isn't set in customizer -->
   <?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
   <!-- Icons & Favicons -->
@@ -107,7 +108,7 @@
           <nav id="main-nav" class="large-10 hide-for-small show-for-large large-centered">
             <div class="row">
               <div class="column large-4">
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" /></a>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt='Avery Lane logo' /></a>
               </div>
               <div class="column large-8">
                 <div class="row hide-for-small-only header-menu">

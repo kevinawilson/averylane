@@ -29,12 +29,12 @@
 										</div>
 									</div>
 									<div class="">
-										© 2018 AVERY LANE | PRIVACY POLICY
+										© 2018 AVERY LANE
 									</div>
 								</div>
 								<div class="medium-4 columns footer-right">
 									<div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GoldSeal.png" /></div>
-									<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" /></a>
+									<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt='Avery Lane logo small'/></a>
 								</div>
 							</div>
 						</div>
