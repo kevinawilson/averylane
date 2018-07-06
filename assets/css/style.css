@@ -1021,6 +1021,41 @@ main .staff-grid h3, main .abcfslTxtColSPg h3 {
     content: '';
 }
 
+.reveal.staff-bio {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.reveal.staff-bio img {
+  padding: 10px 25px 25px 0;
+}
+
+.reveal.staff-bio h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.reveal.staff-bio h3 {
+  color: #606060;
+  padding-top: 0;
+  line-height: 1.0rem;
+  overflow: hidden;
+}
+
+.reveal.staff-bio h3:after {
+  display: block;
+  content: '';
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reveal.staff-bio a {
+  color: #C86775;
+}
+
 /*********************
 PAGE NAVI STYLES
 *********************/
